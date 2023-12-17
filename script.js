@@ -15,3 +15,18 @@ function addTask() {
     // Clear the input field
     taskInput.value = '';
 }
+
+function handleTaskClick(event) {
+    if (event.target.tagName === 'LI') {
+        toggleTaskStatus(event.target);
+    }
+}
+
+function toggleTaskStatus(task) {
+    if (!task.classList.contains('completed')) {
+        task.classList.add('completed');
+    } else {
+        // Double-click deletes the task
+        task.remove();
+    }
+}
