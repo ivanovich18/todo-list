@@ -1,16 +1,18 @@
 body {
     font-family: sans-serif;
+    color: #fff;
 }
 
 #main {
     height: 100vh;
-    background-image: url('./ben10.jpg');
+    background-image: url(https://images4.alphacoders.com/113/1134176.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #todo-list {
+    width: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +20,6 @@ body {
     gap: 1rem;
     background-color: hsla(216, 28%, 7%, 0.5);
     backdrop-filter: blur(16px);
-    width: 30rem;
     border-radius: 10px;
 }
 
@@ -35,12 +36,7 @@ button {
     background-color: black;
 }
 
-h1 {
-    color: #fff;
-}
-
 #tasks {
-    color: #fff;
     font-size: 1.5rem;
 }
 

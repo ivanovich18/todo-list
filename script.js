@@ -1,14 +1,14 @@
 function addTask() {
-    var taskInput = document.getElementById('task-input');
-    var taskText = taskInput.value.trim();
+    let taskInput = document.getElementById('task-input');
+    let taskText = taskInput.value.trim();
 
     if (taskText === '') {
         alert('Please enter a task!');
         return;
     }
 
-    var tasksList = document.getElementById('tasks');
-    var newTask = document.createElement('li');
+    let tasksList = document.getElementById('tasks');
+    let newTask = document.createElement('li');
     newTask.textContent = taskText;
     tasksList.appendChild(newTask);
 
