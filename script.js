@@ -12,7 +12,6 @@ function addTask() {
     newTask.textContent = taskText;
     tasksList.appendChild(newTask);
 
-    // Clear the input field
     taskInput.value = '';
 }
 
